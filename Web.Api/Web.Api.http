@@ -1,0 +1,13 @@
+@hostAddress = https://localhost:7010
+
+GET https://localhost:7010/api/v1/categories/c5bbff54-bce9-49a3-adb8-4a768375f7f4 
+Accept: application/json
+
+###
+POST {{hostAddress}}/v1/categories
+Accept: application/json
+Content-Type: application/json 
+{
+  "categoryName" : "Test",
+  "description" : "Try"
+}
